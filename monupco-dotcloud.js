@@ -33,7 +33,7 @@ module.exports = require("./monupco").configure({
 	  'app_uuid' : env['DOTCLOUD_WWW_HTTP_HOST'],
 	  'app_type' : 'nodejs',
 	  'app_url'  : env['DOTCLOUD_WWW_HTTP_URL'],
-	  'app_vendor' : 2,
+	  'app_vendor' : 1,
 	  'pkg_type' : 2,
 	  'url' : env['MONUPCO_REGISTER_URL'] || process.env['MONUPCO_REGISTER_URL'] ,
 });
