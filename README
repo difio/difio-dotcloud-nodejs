@@ -1,4 +1,4 @@
-This is node.js a client side agent for monupco.com.
+This is a node.js client side agent for monupco.com.
 
 
 Installing on your Docloud node.js application
@@ -13,7 +13,7 @@ Add a dependency in your package.json file
     ...
     "dependencies": {
         ...
-        "monupco-dotcloud": ""
+        "monupco-dotcloud-nodejs": ""
     },
     ...
 
