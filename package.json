@@ -1,0 +1,12 @@
+{	"name" : "monupco-dotcloud"
+,	"description" : "Monupco node.js client for dotCloud"
+,	"version" : "0.0.1"
+,	"author" : "Svetlozar Argirov <zarrro@gmail.com>"
+,	"repository": {
+		"type": "git",
+		"url": "git://github.com/monupco/monupco-dotcloud-nodejs.git"
+	}
+,	"main" : "monupco-dotcloud.js"
+,	"engines": { "node": "*" }
+,	"bin" : { "monupco-dotcloud" : "./monupco-dotcloud.js" }  
+}
