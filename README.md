@@ -17,12 +17,21 @@ Installing on your dotCloud node.js application
         },
         ...
 
-- Enable the registration script in your app postinstall hook. From the application root directory:
+- Execute the registration script in your app postinstall hook.
+If a file named `postinstall` doesn't already exist, create it and add the following:
 
+        #!/bin/sh
+        `npm bin`/monupco-dotcloud'
 
-        [ ! -f postinstall ] && echo '#!/bin/sh' > postinstall && chmod +x postinstall
-        echo '`npm bin`/monupco-dotcloud' >> postinstall
+* Make `postinstall` executable
 
+        chmod a+x postinstall
+
+* Commit your changes:
+
+        git add */package.json
+        git add postinstall
+        git commit -m "enable monupco registration"
 
 - Set your monupco user id. You can get it from <https://monupco-otb.rhcloud.com/profiles/mine/>.
 
