@@ -25,9 +25,14 @@
 
 var fs = require('fs');
 
-var env = JSON.parse(fs.readFileSync('/home/dotcloud/environment.json', 'utf-8'));
+var env = {};
 
-module.exports = require("./monupco").configure({
+try {
+ env = JSON.parse(fs.readFileSync('/home/dotcloud/environment.json', 'utf-8'));
+} catch (e) {
+}
+
+module.exports = require("common-nodejs-monupco").configure({
 	  'user_id' : env['MONUPCO_USER_ID'] || process.env['MONUPCO_USER_ID'],
 	  'app_name' : env['DOTCLOUD_PROJECT'] + '.' + env['DOTCLOUD_SERVICE_NAME'],
 	  'app_uuid' : env['DOTCLOUD_WWW_HTTP_HOST'],

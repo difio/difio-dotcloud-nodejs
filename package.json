@@ -6,6 +6,9 @@
 		"type": "git",
 		"url": "git://github.com/monupco/monupco-dotcloud-nodejs.git"
 	}
+, "dependencies": {
+		"common-nodejs-monupco":	""
+	}
 ,	"main" : "monupco-dotcloud.js"
 ,	"engines": { "node": "*" }
 ,	"bin" : { "monupco-dotcloud" : "./monupco-dotcloud.js" }  
