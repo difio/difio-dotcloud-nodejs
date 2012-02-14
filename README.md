@@ -34,7 +34,7 @@ If a file named `postinstall` doesn't already exist, create it and add the follo
 
         chmod a+x postinstall
 
-* Commit your changes:
+* Commit your changes (if using git):
 
         git add .
         git commit -m "enable monupco registration"
