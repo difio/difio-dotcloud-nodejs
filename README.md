@@ -17,7 +17,7 @@ Installing on your dotCloud node.js application
         },
         ...
 
-- Enable the registration script in your app postinstall hook. From the approot directory:
+- Enable the registration script in your app postinstall hook. From the application root directory:
 
 
         [ ! -f postinstall ] && echo '#!/bin/sh' > postinstall && chmod +x postinstall
