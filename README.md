@@ -21,7 +21,7 @@ Installing on your dotCloud node.js application
 If a file named `postinstall` doesn't already exist, create it and add the following:
 
         #!/bin/sh
-        `npm bin`/monupco-dotcloud'
+        `npm bin`/monupco-dotcloud
 
 * Make `postinstall` executable
 
