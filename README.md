@@ -17,11 +17,18 @@ Installing on your dotCloud node.js application
         },
         ...
 
-- Execute the registration script in your app postinstall hook.
+- Execute the registration script in your postinstall hook. **Note:**
+If you are using an "approot" your `postinstall` script should be in the 
+directory pointed by the “approot” directive of your `dotcloud.yml`.
+For more information about `postinstall` turn to 
+[dotCloud documentation](http://docs.dotcloud.com/guides/postinstall/).
+
 If a file named `postinstall` doesn't already exist, create it and add the following:
 
         #!/bin/sh
         `npm bin`/monupco-dotcloud
+
+
 
 * Make `postinstall` executable
 
@@ -29,8 +36,7 @@ If a file named `postinstall` doesn't already exist, create it and add the follo
 
 * Commit your changes:
 
-        git add */package.json
-        git add postinstall
+        git add .
         git commit -m "enable monupco registration"
 
 - Set your monupco user id. You can get it from <https://monupco-otb.rhcloud.com/profiles/mine/>.
