@@ -1,4 +1,6 @@
-Node.js client side agent for monupco.com preconfigured for dotCloud.
+Node.js client side agent for monupco.com, preconfigured for dotCloud.
+
+It compiles a list of installed packages and sends it to monupco.com.
 
 
 Installing on your dotCloud node.js application
