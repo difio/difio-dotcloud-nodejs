@@ -1,4 +1,5 @@
-Node.js client side agent for monupco.com, preconfigured for dotCloud.
+Registration agent for monupco.com, preconfigured for dotCloud / Node.js
+applications. 
 
 It compiles a list of installed packages and sends it to monupco.com.
 
