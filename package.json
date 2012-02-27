@@ -1,5 +1,5 @@
 {	"name" : "monupco-dotcloud-nodejs"
-,	"description" : "monupco.com client for dotCloud / node.js applications"
+,	"description" : "monupco.com registration agent for dotCloud / node.js applications"
 ,	"version" : "0.0.2"
 ,	"homepage": "https://github.com/monupco/monupco-dotcloud-nodejs"
 ,	"author" : "Svetlozar Argirov <zarrro@gmail.com>"
