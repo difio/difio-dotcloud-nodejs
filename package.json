@@ -1,6 +1,6 @@
 {	"name" : "monupco-dotcloud-nodejs"
 ,	"description" : "monupco.com registration agent for dotCloud / node.js applications"
-,	"version" : "0.0.2"
+,	"version" : "0.0.3"
 ,	"homepage": "https://github.com/monupco/monupco-dotcloud-nodejs"
 ,	"author" : "Svetlozar Argirov <zarrro@gmail.com>"
 ,	"repository": {
