@@ -1,16 +1,16 @@
-{	"name" : "monupco-dotcloud-nodejs"
-,	"description" : "monupco.com registration agent for dotCloud / node.js applications"
-,	"version" : "0.0.3"
-,	"homepage": "https://github.com/monupco/monupco-dotcloud-nodejs"
+{	"name" : "difio-dotcloud-nodejs"
+,	"description" : "Difio registration agent for dotCloud / node.js applications"
+,	"version" : "2.0.0"
+,	"homepage": "https://github.com/difio/difio-dotcloud-nodejs"
 ,	"author" : "Svetlozar Argirov <zarrro@gmail.com>"
 ,	"repository": {
 		"type": "git",
-		"url": "git://github.com/monupco/monupco-dotcloud-nodejs.git"
+		"url": "git://github.com/difio/difio-dotcloud-nodejs.git"
 	}
 , "dependencies": {
-		"common-nodejs-monupco":	""
+		"common-nodejs-difio":	""
 	}
-,	"main" : "monupco-dotcloud.js"
+,	"main" : "difio-dotcloud.js"
 ,	"engines": { "node": "*" }
-,	"bin" : { "monupco-dotcloud" : "./monupco-dotcloud.js" }  
+,	"bin" : { "difio-dotcloud" : "./difio-dotcloud.js" }  
 }

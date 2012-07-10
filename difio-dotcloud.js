@@ -32,15 +32,15 @@ try {
 } catch (e) {
 }
 
-module.exports = require("common-nodejs-monupco").configure({
-	  'user_id' : env['MONUPCO_USER_ID'] || process.env['MONUPCO_USER_ID'],
+module.exports = require("common-nodejs-difio").configure({
+	  'user_id' : env['DIFIO_USER_ID'] || process.env['DIFIO_USER_ID'],
 	  'app_name' : env['DOTCLOUD_PROJECT'] + '.' + env['DOTCLOUD_SERVICE_NAME'],
-	  'app_uuid' : env['MONUPCO_UUID'],
+	  'app_uuid' : env['DIFIO_UUID'],
 	  'app_type' : 'Node.js',
 	  'app_url'  : env['DOTCLOUD_WWW_HTTP_URL'],
 	  'app_vendor' : 1,
 	  'pkg_type' : 2,
-	  'url' : env['MONUPCO_REGISTER_URL'] || process.env['MONUPCO_REGISTER_URL'] ,
+	  'url' : env['DIFIO_REGISTER_URL'] || process.env['DIFIO_REGISTER_URL'] ,
 });
 
 

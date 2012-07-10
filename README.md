@@ -1,30 +1,30 @@
-Registration agent for monupco.com, preconfigured for dotCloud / Node.js
+Registration agent for Difio, preconfigured for dotCloud / Node.js
 applications. 
 
-It compiles a list of installed packages and sends it to monupco.com.
+It compiles a list of installed packages and sends it to http://www.dif.io.
 
 
 Installing on your dotCloud node.js application
 ----------------------------------------------
 
-- Create an account at http://monupco.com
+- Create an account at http://www.dif.io
 
 - Create your Node.js application and push it to dotCloud
 
-- Configure your Monupco userID. You can get it from https://monupco-otb.rhcloud.com/profiles/mine/
+- Configure your Difio userID. You can get it from https://difio-otb.rhcloud.com/profiles/mine/
 
-        dotcloud var set <app name> MONUPCO_USER_ID=UserID
+        dotcloud var set <app name> DIFIO_USER_ID=UserID
 
 - Generate a unique identifier for this application and save the value as environmental variable.
 
-        dotcloud var set <app name> MONUPCO_UUID=`uuidgen`
+        dotcloud var set <app name> DIFIO_UUID=`uuidgen`
 
 - Add a dependency in your application's package.json file
 
         ...
         "dependencies": {
             ...
-            "monupco-dotcloud-nodejs": ""
+            "difio-dotcloud-nodejs": ""
         },
         ...
 
@@ -37,7 +37,7 @@ For more information about `postinstall` turn to
 If a file named `postinstall` doesn't already exist, create it and add the following:
 
         #!/bin/sh
-        `npm bin`/monupco-dotcloud
+        `npm bin`/difio-dotcloud
 
 * Make `postinstall` executable
 
@@ -46,7 +46,7 @@ If a file named `postinstall` doesn't already exist, create it and add the follo
 * Commit your changes (if using git):
 
         git add .
-        git commit -m "enable monupco registration"
+        git commit -m "enable Difio registration"
 
 - Push your application
 
@@ -56,10 +56,10 @@ If a file named `postinstall` doesn't already exist, create it and add the follo
 
         19:55:10 [www.0] Running postinstall script...
         19:55:13 [www.0] response:200
-        19:55:13 [www.0] Monupco: Success, registered/updated application with id 10
+        19:55:13 [www.0] Difio: Success, registered/updated application with uuid 25d23384-46a8-48ce-83b0-01f4fa4c5987
 
 **Note**: While testing the registration code we found out that the Node.js application in dotCloud
-may not be accessible via http immediately. During that time registration to Monupco may fail!
+may not be accessible via http immediately. During that time registration to Difio may fail!
 If this happens your application will register the next time you push to dotCloud!
 
-- That's it, you can now check your application statistics at <http://monupco.com>
+- That's it, you can now check your application statistics at http://www.dif.io
