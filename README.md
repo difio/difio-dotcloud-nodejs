@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/difio/difio-dotcloud-nodejs.png)](http://travis-ci.org/difio/difio-dotcloud-nodejs)
 Registration agent for Difio, preconfigured for dotCloud / Node.js
 applications. 
 
