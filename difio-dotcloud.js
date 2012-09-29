@@ -36,7 +36,7 @@ module.exports = require("common-nodejs-difio").configure({
 	  'user_id' : env['DIFIO_USER_ID'] || process.env['DIFIO_USER_ID'],
 	  'app_name' : env['DOTCLOUD_PROJECT'] + '.' + env['DOTCLOUD_SERVICE_NAME'],
 	  'app_uuid' : env['DIFIO_UUID'],
-	  'app_type' : 'Node.js',
+	  'app_type' : 'node.js-' + process.versions['node'],
 	  'app_url'  : env['DOTCLOUD_WWW_HTTP_URL'],
 	  'app_vendor' : 1,
 	  'pkg_type' : 2,
