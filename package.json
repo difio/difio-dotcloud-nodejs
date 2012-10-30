@@ -1,6 +1,6 @@
 {	"name" : "difio-dotcloud-nodejs"
 ,	"description" : "Difio registration agent for dotCloud / node.js applications"
-,	"version" : "2.0.1"
+,	"version" : "2.0.2"
 ,	"homepage": "https://github.com/difio/difio-dotcloud-nodejs"
 ,	"author" : "Svetlozar Argirov <zarrro@gmail.com>"
 ,	"repository": {
